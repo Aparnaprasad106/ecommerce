@@ -14,7 +14,7 @@ const router = require('./routes/router')
 const server = express()
 
 // to hold port number
-const PORT = 3000
+const PORT = 3000 ||process.env.PORT
 // use in server app
 server.use(cors())
 server.use(express.json())
